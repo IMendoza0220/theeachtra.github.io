@@ -1,61 +1,279 @@
-<!-- Activity 1: Basic HTML Bio -->
-
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  
-  
+  <title>Ivan Mendoza Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<body>
-
-  <!-- Site Header -->
-  <header>
-    <!-- h1: The most important headline -->
-    <h1>Student Bio</h1>
-  </header>
-
-  <div id= container>git
-
-    <!-- Section 1: Bio -->
-    <section id=main-bio>
-      <!-- h2: Tier-2 Headline (Not as important as the h1 header, but more than one allowed). -->
-      <h2>Ivan Mendoza</h2>
-
-      <!-- Image with link -->
-      <img id=bio-image src="bw pic.jpg" alt="Ivan Mendoza BW">
-
-      <!-- Paragraph with embedded link -->
-      <p>Hello, My name is Ivan Mendoza and I am a technology teacher for Garland HS.<br/> 
-            I have been married for almost 9 years and have 3 crazy kids. 
-            <br/>There is a dog in 
-        our house but I don't know why. </p>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#myPage">Ivan Mendoza</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myPage">HOME</a></li>
+            <li><a href="#band">ABOUT ME</a></li>
+            <li><a href="#tour">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.linkedin.com/in/ivan-mendoza-066040b8/">LinkedIn</a></li>
+                <li><a href="https://github.com/theeachtra">GitHub</a></li>
+                <li><a href="#">More</a></li> 
+              </ul>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images/code.jpg" alt="Code Screen" width="1200" height="700">
+            <div class="carousel-caption">
+              <h3>Full Stack Developer</h3>
+              <p>From Concept To Final Product.</p>
+            </div>      
+          </div>
+    
+          <div class="item">
+            <img src="images/keybord.jpg" alt="Computer Keybord" width="1200" height="700">
+            <div class="carousel-caption">
+              <h3>Technology </h3>
+              <p>Technology administration .</p>
+            </div>      
+          </div>
         
-        <p>In my spare time I coach a robotics team and I also like to build and 
-            fly RC airplanes.
-        </p>
-    </section>
+         
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+    <!-- Container (The Band Section) -->
+    <div id="band" class="container text-center">
+      <h3>ABOUT ME</h3>
+      <p><em>Ivan Mendoza</em></p>
+      <p>Full Stack Web Developer with a demonstrated history of working in The Technology and Education industry. Skilled HTML5, CSS3, Javascript, JQuery, Bootstrap, Angular JS, Firebase, , Node Js, MySQL, MongoDB, Express &  Educational Technology. Strong technology education background with Bachlors in Technology and Masters in E-Learning  and proficient in Spanish</p>
+      <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="text-center"><strong>University of North Texas</strong></p><br>
+          <a href="#demo" data-toggle="collapse">
+            <img src="images/untlogo.jpg" class="img-circle person" alt="University of North Texas" width="255" height="255">
+          </a>
+          <div id="demo" class="collapse">
+            <p>BAAS</p>
+            <p>Concentration in Technology </p>
+            <p>Multimedia Development</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <p class="text-center"><strong>Texas A&M-Commerce</strong></p><br>
+          <a href="#demo2" data-toggle="collapse">
+            <img src="images/Commerce.jpg" class="img-circle person" alt="Texas A&M-Commerce" width="255" height="200">
+          </a>
+          <div id="demo2" class="collapse">
+            <p>MS</p>
+            <p>E-Learning Technology</p>
+            
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <p class="text-center"><strong>Souther Methodist University</strong></p><br>
+          <a href="#demo3" data-toggle="collapse">
+            <img src="images/SMUwPony.BR.jpg" class="img-circle person" alt="Souther Methodist University" width="255" height="255">
+          </a>
+          <div id="demo3" class="collapse">
+            <p>Professional Certificate</p>
+            <p>Full Stack Developer</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Container (TOUR Section) -->
+    <div id="tour" class="bg-1">
+      <div class="container">
+       
+       
+        
+        <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Stationary</h2>
+                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="images/portfolio-1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Ice Cream</h2>
+                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="images/portfolio-2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Strawberries</h2>
+                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="images/portfolio-3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Workspace</h2>
+                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="images/portfolio-4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+            </div>
+          
+        </div>
+      </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+            </div>
+            <div class="modal-body">
+              <form role="form">
+                <div class="form-group">
+                  <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+                  <input type="number" class="form-control" id="psw" placeholder="How many?">
+                </div>
+                <div class="form-group">
+                  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                  <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                </div>
+                  <button type="submit" class="btn btn-block">Pay 
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove"></span> Cancel
+              </button>
+              <p>Need <a href="#">help?</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container">
+      <h3 class="text-center">Contact</h3>
+      <p class="text-center"><em>Send me a message!</em></p>
+    
+      <div class="row">
+        <div class="col-md-4">
+          <p>Ivan Mendoza.</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span>Dallas,Tx</p>
+          <p><span class="glyphicon glyphicon-phone"></span>Phone: 214-434-5379</p>
+          <p><span class="glyphicon glyphicon-envelope"></span>Email: ivanmendoza0220@gmail.com</p>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+          <br>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <button class="btn pull-right" type="submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
 
-    <!-- Section 2: Contact Info -->
-    <section id=contact-info>
-      <!-- h2: Tier-2 Headline -->
-      <h2>Contact Info</h2>
 
-      <!-- Unordered list -->
-      <ul>
-        <li><strong>Email:</strong> <a href="#">ivanmendoza0220@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">https://github.com/theeachtra</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-      </ul>
+    
 
-    </section>
-  </div>
+
 
 </body>
-
-</html>
+   
+    
+    <!-- Footer -->
+    <footer class="text-center">
+      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a><br><br>
+      <p>Ivan Mendoza <a href="https://github.com/theeachtra" data-toggle="tooltip" title="Contact Me">ivanmendoza0220@gmail.com</a></p> 
+    </footer>

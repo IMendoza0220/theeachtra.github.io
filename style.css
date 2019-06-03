@@ -143,6 +143,7 @@ body {
     position: relative;
     overflow: hidden;
     max-width: 530px;
+    max-height: 350px;
     margin: auto auto 1rem;
   }
   
